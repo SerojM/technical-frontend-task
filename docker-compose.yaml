@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  sentium-task:
+    build: ./sentium-task
+    container_name: sentium-task_c
+    ports:
+      - '3000:3000'
+
+
