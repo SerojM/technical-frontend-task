@@ -1,0 +1,81 @@
+{
+    "env": {
+        "es2021": true,
+        "browser": true,
+        "jest": true
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "react-hooks"
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "rules": {
+        "global-require": 0,
+        "no-param-reassign": [2, { "props": false }],
+        "no-underscore-dangle": [0],
+        "radix": [0],
+        "react/static-property-placement": [0],
+        "react/jsx-props-no-spreading": [0],
+        "jsx-a11y/iframe-has-title": [0],
+        "jsx-a11y/label-has-associated-control": [1, {
+            "labelComponents": ["CustomLabel"],
+            "labelAttributes": ["inputLabel"],
+            "controlComponents": ["CustomInput"],
+            "assert": "both",
+            "depth": 3
+        }],
+        "max-len": ["error", { "code": 120 }],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "react/destructuring-assignment": [0, "always", { "ignoreClassFields": true }],
+        "no-use-before-define": ["error", { "functions": false, "variables": false, "classes": false }],
+        "react/prefer-stateless-function": [0],
+        "react/forbid-prop-types": [1, {
+            "forbid": [],
+            "checkContextTypes": true,
+            "checkChildContextTypes": true
+        }],
+        "import/no-unresolved": "off",
+        "@typescript-eslint/no-empty-interface": [
+            "error",
+            {
+                "allowSingleExtends": false
+            }
+        ]
+    }
+}
