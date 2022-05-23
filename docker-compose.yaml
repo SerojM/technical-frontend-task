@@ -1,8 +1,8 @@
 version: "3.8"
 services:
   sentium-task:
-    build: ./sentium-task
-    container_name: sentium-task_c
+    build: ./technical-frontend-task
+    container_name: technical-frontend-task_c
     ports:
       - '3000:3000'
 
