@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  sentium-task:
+  technical-frontend-task:
     build: ./technical-frontend-task
     container_name: technical-frontend-task_c
     ports:
